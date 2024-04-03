@@ -1,77 +1,288 @@
-<div id="sidebar">
-<div id="tournoi-info">
-<div id="tournoi-img"></div>
-<div>
-<div>
-Tournoi 1
-</div>
-<div>statut</div>
-</div>
-</div>
-<div id="onglets">
-<div id="onglet">
-Parametrage
-</div>
-<div id="onglet">
-Equipes
-</div>
-<div id="onglet">
-Planing
-</div>
-<div id="onglet">
-Classement
-</div>
-</div>
-<div>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-</div>
+<body>
+  <div class="container">
 
-</div>
+    <aside>
+      
+      <div class="top">
+        <a href="">
+        <div class="close">
+          <span class="material-symbols-outlined">
+            arrow_back_ios
+            </span>
+        </div>
+      </a>
+        <div class="logo">
+          <h2><span class="danger">Tournoi 1</span></h2>
+        </div>
+        
+      </div>
+      
+      <div class="sidebar">
+        <a href="" class="element" id="element1">
+          <span class="material-symbols-outlined">
+            grid_view
+            </span>
+          <h3>Tableau de bord</h3>
+        </a>
+        <a href="" class="element" id="element2">
+          <span class="material-symbols-outlined">
+            groups
+            </span>
+          <h3>Equipe</h3>
+        </a>
+        <a href="" class="element" id="element3">
+          <span class="material-symbols-outlined">
+            calendar_today
+            </span>
+          <h3>Planing</h3>
+        </a>
+        <a href="" class="element" id="element4">
+          <span class="material-symbols-outlined">
+            military_tech
+            </span>
+          <h3>Classement</h3>
+        </a>
+        <a href="" class="element" id="element5">
+          <span class="material-symbols-outlined">
+            settings
+            </span>
+          <h3>Parametrage</h3>
+        </a>
+        <a href="">
+          <span class="material-symbols-outlined">
+            grid_view
+            </span>
+          <h3>Martin Odg</h3>
+        </a>
+      </div>
+    </aside>
+    <main>
+      <h1>Main</h1>
+    </main>
+
+    <div class="right">
+      <div class="top">
+      <div class="profile">
+        <div class="info">
+          <p><b>Martin</b></p>
+          <p>Admin</p>
+          
+        </div>
+        <div class="profil-photo">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Woman_1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
+
+:root {
+  --clr-primary: #7380ec;
+  --clr-danger: #ff7782;
+  --clr-success: #41f1b6;
+  --clr-white: #fff;
+  --clr-info-dark: #7d8da1;
+  --clr-info-light: #dce1eb;
+  --clr-dark: #363949;
+  --clr-warnig: #ff4edc;
+  --clr-light: rgba(132, 139, 200, 0.18);
+  --clr-primary-variant: #111e88;
+  --clr-dark-variant: #677483;
+  --clr-color-background: #f6f6f9;
+
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 0.8rem;
+  --border-radius-3: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--clr-light);
+
 }
 
-#sidebar{
-    
+/* dark theme */
+.dark-theme-variables {
+  --clr-color-background: #181a1e;
+  --clr-white: #202528;
+  --clr-light: rgba(0, 0, 0, 0.4);
+  --clr-dark: #edeffd;
+  --clr-dark-variant: #677483;
+  --box-shadow: 0 2rem 3rem var(--clr-light)
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  list-style: none;
+  appearance: none;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.8rem;
+  user-select: none;
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+.container{
+    display: grid;
+    width: 96%;
+    gap: 1.8rem;
+    margin: 0 auto;
+    grid-template-columns: 14rem auto 14rem;
+  }
+  a{
+    color: black;
+  }
+  h1{
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  h3{
+    font-size: 0.87rem;
+  }
+  h4{
+    font-size: 0.8rem;
+  }
+  h5{
+    font-size: 0.77rem;
+  }
+  small{
+    font-size: 0.75rem;
+  }
+
+  aside{
+    height: 100vh;
+  }
+
+  .profil-photo img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .right .top .profile{
     display: flex;
-    flex-direction: column;
-  
-  
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 1.4rem;
+  }
 
-    position: fixed;
-    width: 10%;
-    height: 100%;
-    left: 0;
-    background-color: rgb(90, 90, 90);
-}
-
-#sidebar>div{
-    margin-left: 10%;
-}
-
-#tournoi-info{
-    display: inline;
-    margin-top: 10%;
-    height: 10%;
-
-}
-
-#tournoi-img{
-    width: 30%;
-    background-color: aliceblue;
-    margin-right: 10%;
-    aspect-ratio: 1/1; 
-}
-
-#onglets{
+  aside .top{
+    background-color: var(--clr-white);
     display: flex;
-
-    height: 15%;
-    flex-direction: column;
     justify-content: space-around;
-}
+    align-items: center;
+    margin-top: 1.4rem;
+  }
 
+  aside .logo{
+    display: flex;
+    gap:1rem;
+  }
+
+  
+
+  aside .sidebar{
+    background-color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    position: relative;
+    top: 1rem;
+  }
+
+  aside .sidebar a{
+    display: flex;
+    color: var(--clr-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    text-decoration: none;
+    align-items: center;
+    height: 3.2rem;
+    transition: all .1s ease-in;
+  }
+
+  aside .sidebar a span{
+    font-size: 1.6rem;
+    transition: all .1s ease-in;
+  }
+
+  aside .sidebar a:last-child{
+    position: absolute;
+    
+    bottom: 1rem;
+    width: 100%;
+  }
+  aside .sidebar a:last-child::before{
+    content: '';
+    position: absolute; /* Positionne le pseudo-élément par rapport à son parent */
+  top: 0; /* Place le pseudo-élément au-dessus de son parent */
+  left: 0; /* Décale le pseudo-élément vers la droite de 25% de la largeur de son parent */
+  width: 70%; /* Définit la largeur de la bordure supérieure à 50% de la largeur de son parent */
+  height: 2px; /* Définit l'épaisseur de la bordure supérieure */
+  background-color: var(--clr-info-dark) /* Couleur de la bordure supérieure */
+  }
+
+  aside .sidebar a.active{
+    background: var(--clr-light);
+    color: var(--clr-primary);
+    margin-left: 0;
+    transition: all .2s ease-in;
+    /* border-left:5px solid var(--clr-primary) ;*/
+  }
+
+  
+  
+  aside .sidebar a.active::before{
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: var(--clr-primary);
+  }
+  aside .sidebar a:hover{
+    color: var(--clr-primary);
+  }
+  aside .sidebar a:hover:not(.active) span{
+    margin-left: 1rem;
+    transition: .4s ease;
+  }
 </style>
+
+<script>
+// Sélectionner tous les éléments avec la classe "element"
+const elements = document.querySelectorAll('.element');
+
+// Ajouter un gestionnaire d'événement de clic à chaque élément
+elements.forEach(element => {
+  element.addEventListener('click', function() {
+    event.preventDefault();
+
+    // Retirer la classe active de tous les éléments
+    elements.forEach(el => {
+      el.classList.remove('active');
+    });
+    // Ajouter la classe active uniquement à l'élément cliqué
+    this.classList.add('active');
+  });
+});
+  
+    </script>
